@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <unistd.h>
-const int SIZE = 50;
+const int SIZE = 30;
 
 int countNeighbors(int grid[SIZE][SIZE], int row, int column);
 
@@ -50,7 +50,7 @@ void initializeGrid(int grid[SIZE][SIZE]) {
 void printGrid(int grid[SIZE][SIZE]){
     for(int i=0; i < SIZE; i++){
         for(int j = 0; j < SIZE; j++){
-            std::cout << (grid[i][j] == 0 ? " " : "*");
+            std::cout << (grid[i][j] == 0 ? " " : "#");
         }
         std::cout << std::endl;
     }
